@@ -7,7 +7,8 @@ import cors from 'cors'
 import './config/database.js';
 
 //Import router
-// import { router as scheduleRouter } from './routes/scheduleRoute.js'
+import { router as contactRouter } from './routes/contactRoutes.js'
+
 
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -15,7 +16,7 @@ const PORT = process.env.PORT || 3000
 app.use(cors())
 app.use(express.json())
 
-// app.use('/submit', scheduleRouter)
+app.use('/contact', contactRouter)
 
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`)
