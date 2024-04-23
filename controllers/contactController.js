@@ -33,8 +33,8 @@ const handleContactInfo = async(req,res) => {
     sendEmail({
       from: MY_EMAIL,
       to: email,
-      subject: `Confirmation: We received your message!`,
-      text: `Hello ${name},\n\nThank you for reaching out. We have received your message and will get back to you soon!\n\nBest,\nYour Team`
+      subject: `Confirmation: I received your message!`,
+      text: `Hello ${name},\n\nThank you for reaching out. I have received your message and will get back to you soon!\n\nBest,\nKevin Velazquez`
     })
 
     sendEmail({
