@@ -9,7 +9,6 @@ import './config/database.js';
 //Import router
 import { router as contactRouter } from './routes/contactRoutes.js'
 
-
 const app = express()
 const PORT = process.env.PORT || 3000
 

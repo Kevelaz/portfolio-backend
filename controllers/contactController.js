@@ -1,7 +1,6 @@
 import { Contact } from "../models/contact.js";
 import nodemailer from "nodemailer";
 
-
 const { MY_EMAIL, PASSWORD } = process.env
 
 const transporter = nodemailer.createTransport({
